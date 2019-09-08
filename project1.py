@@ -14,7 +14,50 @@ pylab： 完全封装，环境最接近matlab。不推荐使用
 '''
 
 
+'''
+pyplot 形式
+'''
+# import matplotlib.pyplot as plt
+# import numpy as np
+# # plt.plot([1,2,3,4],[-4,-3,-2,-1]) # 第一 个[]为x轴，第二个[]为y轴
+# # plt.plot([1,2,3,4],[-1,-2,-3,-4])
+
+# x = np.arange(0,10,1)
+# y = np.random.randn(len(x))
+# plt.plot(x,y)
+# plt.title('pyplot')
+
+# plt.show()
+
+
+
+''' 
+pylab 形式
+'''
+# from pylab import *
+
+# x = arange(0,10,1)
+# y = randn(len(x))
+
+# plot(x,y)
+# title('pylab')
+# show()
+
+'''
+面向对象的方式
+'''
 import matplotlib.pyplot as plt
-# plt.plot([1,2,3,4],[-4,-3,-2,-1]) # 第一 个[]为x轴，第二个[]为y轴
-plt.plot([1,2,3,4],[-1,-2,-3,-4])
+import numpy as np
+x = np.arange(0,10,1)
+y = np.random.randn(len(x))
+
+fig = plt.figure()
+ax = fig.add_subplot()
+l,=plt.plot(x,y)
+t = ax.set_title('object oriented')
+
 plt.show()
+
+
+
+
