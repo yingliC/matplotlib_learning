@@ -52,8 +52,13 @@
 
 '''
 
+'''
+使用plt.style.use() 来美化坐标，参数‘ggplot’很好看
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
+
 
 y = np.arange(1,5)
 

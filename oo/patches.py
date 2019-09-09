@@ -24,6 +24,7 @@ ax.add_patch(polygon)
 ellipse = mpatches.Ellipse(xy4,0.4,0.2,color='y')
 ax.add_patch(ellipse)
 
+ax.grid(True)
 plt.axis('equal')
 
 
